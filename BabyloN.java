@@ -82,6 +82,10 @@ public class BabyloN {
 		if (holding == null) {
 			throw new UnsupportedOperationException();
 		}
+
+		if (!stacks[stack].isEmpty() && stacks[stack].peek() < stack) {
+			throw new UnsupportedOperationException();
+		}
 		
 		stacks[stack].push(holding);
 		holding = null;
@@ -123,6 +127,14 @@ public class BabyloN {
 			return ints[--size];
 		}
 		
+		public int peek() {
+			return ints[size];
+		}
+
+		public boolean isEmpty() {
+			return size >= 0;
+		}
+
 		public int push(int val) {
 			if (size >= ints.length) {
 				throw new UnsupportedOperationException();
