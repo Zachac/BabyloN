@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 /**
- * BabyloN, a tower of babylon solution for N by M stacks & stack sizes.
+ * BabyloN, a tower of hanoi solution for N by M stacks & stack sizes.
  *
  * @author Zachary Chandler
  */
